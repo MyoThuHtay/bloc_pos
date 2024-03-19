@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>315536156856-edu9k2e7bsf9a0b1fqm1qfc4f8ti4edb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.315536156856-edu9k2e7bsf9a0b1fqm1qfc4f8ti4edb</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>315536156856-72bsal6mdtqrtod16jrbkdj8335t4h9l.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA0YG1-KEbt2tWT0krsvBqo3Up2Y_pR0FQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>315536156856</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mops.pos</string>
+	<key>PROJECT_ID</key>
+	<string>mops-ac848</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mops-ac848.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:315536156856:ios:4fe36dcc179613ac2e2c4d</string>
+	<key>DATABASE_URL</key>
+	<string>https://mops-ac848-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>

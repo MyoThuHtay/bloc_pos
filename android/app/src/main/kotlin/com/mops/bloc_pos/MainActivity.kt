@@ -1,4 +1,4 @@
-package com.mops.bloc_pos
+package com.mops.pos
 
 import io.flutter.embedding.android.FlutterActivity
 

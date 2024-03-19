@@ -82,6 +82,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:315536156856:android:4bc40fa127963b8f2e2c4d",
+        "android_client_info": {
+          "package_name": "com.mops.pos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315536156856-j8ptmm6165u963r988r94kvjmfjnf16s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCorWICN5KUacWTSVetesMiyXrsQ4UsCKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315536156856-j8ptmm6165u963r988r94kvjmfjnf16s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:315536156856:android:d8136076ac306ca72e2c4d",
         "android_client_info": {
           "package_name": "com.mops.pound_tite"

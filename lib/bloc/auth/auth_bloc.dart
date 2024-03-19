@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 part 'auth_event.dart';
@@ -74,21 +74,21 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     });
     on<FacebookLoginRequested>((event, emit) async {
       final UserCredential userData;
-      emit(AuthLoading());
+      //emit(AuthLoading());
       try {
-        final LoginResult result = await FacebookAuth.instance
-            .login(permissions: ['email', 'public_profile']);
-        if (result.status == LoginStatus.success) {
-          final OAuthCredential authCredential =
-              FacebookAuthProvider.credential(result.accessToken!.token);
-          final userdata =
-              await FirebaseAuth.instance.signInWithCredential(authCredential);
-          //await FacebookAuth.instance.getUserData();
-          userData = userdata;
-          return emit(
-            AuthSuccess(uid: userData.user!.displayName!),
-          );
-        }
+        final FacebookLogin fb = FacebookLogin();
+        final result = await fb.logIn(permissions: [
+          FacebookPermission.publicProfile,
+          FacebookPermission.email,
+        ]);
+        final OAuthCredential authCredential =
+            FacebookAuthProvider.credential(result.accessToken!.token);
+        final userdata =
+            await FirebaseAuth.instance.signInWithCredential(authCredential);
+        userData = userdata;
+        return emit(
+          AuthSuccess(uid: userData.user!.displayName!),
+        );
       } catch (e) {
         return emit(
           AuthFailure(

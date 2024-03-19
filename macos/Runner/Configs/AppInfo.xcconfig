@@ -8,7 +8,7 @@
 PRODUCT_NAME = pos
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.mops.bloc_pos
+PRODUCT_BUNDLE_IDENTIFIER = com.mops.pos
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.mops. All rights reserved.

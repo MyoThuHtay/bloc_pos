@@ -18,22 +18,6 @@ final class AuthFailure extends AuthState {
 
 final class AuthLoading extends AuthState {}
 
-final class GoogleLogin extends AuthState {
-  final String uid;
 
-  GoogleLogin({required this.uid});
-}
-
-final class EmailSignIn extends AuthState {
-  final String uid;
-
-  EmailSignIn({required this.uid});
-}
-
-final class FacebookLogin extends AuthState {
-  final String name;
-
-  FacebookLogin({required this.name});
-}
 
 final class SignOut extends AuthState {}

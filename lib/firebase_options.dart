@@ -17,24 +17,15 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -52,12 +43,47 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyAFkRxSPEfArZl-KeOMEKKuQ44N1-YxPb4',
+    appId: '1:315536156856:web:58381659f993c3cb2e2c4d',
+    messagingSenderId: '315536156856',
+    projectId: 'mops-ac848',
+    authDomain: 'mops-ac848.firebaseapp.com',
+    databaseURL: 'https://mops-ac848-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'mops-ac848.appspot.com',
+    measurementId: 'G-7PL763RX0P',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCorWICN5KUacWTSVetesMiyXrsQ4UsCKI',
-    appId: '1:315536156856:android:d8136076ac306ca72e2c4d',
+    appId: '1:315536156856:android:4bc40fa127963b8f2e2c4d',
     messagingSenderId: '315536156856',
     projectId: 'mops-ac848',
     databaseURL: 'https://mops-ac848-default-rtdb.asia-southeast1.firebasedatabase.app',
     storageBucket: 'mops-ac848.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA0YG1-KEbt2tWT0krsvBqo3Up2Y_pR0FQ',
+    appId: '1:315536156856:ios:4fe36dcc179613ac2e2c4d',
+    messagingSenderId: '315536156856',
+    projectId: 'mops-ac848',
+    databaseURL: 'https://mops-ac848-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'mops-ac848.appspot.com',
+    androidClientId: '315536156856-72bsal6mdtqrtod16jrbkdj8335t4h9l.apps.googleusercontent.com',
+    iosClientId: '315536156856-edu9k2e7bsf9a0b1fqm1qfc4f8ti4edb.apps.googleusercontent.com',
+    iosBundleId: 'com.mops.pos',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyA0YG1-KEbt2tWT0krsvBqo3Up2Y_pR0FQ',
+    appId: '1:315536156856:ios:86d3d642ed24b1382e2c4d',
+    messagingSenderId: '315536156856',
+    projectId: 'mops-ac848',
+    databaseURL: 'https://mops-ac848-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'mops-ac848.appspot.com',
+    androidClientId: '315536156856-72bsal6mdtqrtod16jrbkdj8335t4h9l.apps.googleusercontent.com',
+    iosClientId: '315536156856-vik0itqfdikpmk1jnjvhld6v9gqhaiaa.apps.googleusercontent.com',
+    iosBundleId: 'com.mops.pos.RunnerTests',
   );
 }
