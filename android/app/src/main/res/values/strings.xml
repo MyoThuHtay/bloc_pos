@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    
+    <string name="app_name">Mops POS</string>
+    <string name="facebook_app_id">331230546606613</string>
+    <string name="facebook_client_token">655eb59b81e2e7225431bf0d992be644</string>
+    <string name="fb_login_protocol_scheme">fb331230546606613</string>
+</resources>
